@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Film Vault</title>
+    <style>
+        .marquee-container {
+  background-color: black; /* Entire section stays black */
+  width: 100%; /* Full-width */
+  height: 50px; /* Fixed height to keep it visible */
+  display: flex;
+  align-items: center; /* Centers text vertically */
+  overflow: hidden; /* Ensures smooth scrolling */
+}
+
+.marquee {
+  white-space: nowrap;
+  display: inline-block;
+  color: white; /* White text */
+  font-size: 15px;
+  font-family:Poppins;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+</style>
+</head>
+</html>
+<div class="marquee-container">
+  <div class="marquee">
+    Welcome to The Film Vault! 📸 Find your perfect film camera today!
+  </div>
+</div>
 
